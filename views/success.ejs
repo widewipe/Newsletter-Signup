@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+
+    <div class="flex">
+        <div class="success container">
+            <div class="main">
+                <div class="cont1">
+                    <img src="images/icon-list.svg" alt="done" class="done">
+                    <h1 class="shead">Thanks for subscribing!</h1>
+                    <p class="conf">A confirmation email has been sent to <%= subemail %>. Please open it and click the button inside to confirm your subscription.</p>
+                </div>
+                <form action="/success" method="post" class="succ">
+                    <button type="submit" class="dismiss btn">Dismiss</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+<%- include('partials/footer') -%>
