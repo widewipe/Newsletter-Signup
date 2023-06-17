@@ -30,7 +30,7 @@ app.post('/', function(req, res){
 
 app.get('/success', function(req, res){
     title = 'Success! Thanks for signing up to our newsletter';
-    res.render('success', {title:'success', subemail: email});
+    res.render('success', {title:title, subemail: email});
 })
 
 app.post('/success', function(req, res){
